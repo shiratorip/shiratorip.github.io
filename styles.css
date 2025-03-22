@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(126, 141, 128);
+    overflow: hidden;
+}
+.devider{
+    display: inline-block;
+    align-content: center;
+    font-family: monospace;
+    border: 1px solid rgb(27, 29, 49);
+    border-radius: 3px;
+    font-size: 20px;
+    padding: 5px 10px;
+    background-color: rgba(23, 30, 124, 0.15);
+}
+.code_pour{
+    display: inline-block;
+    font-family: monospace;
+    font-size: 10px;
+    width: 33%;
+    height: 30px;
+    background-color: rgba(18, 21, 54, 0.45);
+    animation-name: changing-size;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    border-radius: 10px;
+}
+@keyframes changing-size {
+    0% {
+        width: 0%;
+        margin: 0px;
+    }
+    50% {
+        width: 50%;
+        margin: 0px;
+    }
+    100% {
+        width: 0%;
+        margin-left: 50%;
+    }
+}
